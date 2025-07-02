@@ -1,0 +1,30 @@
+[
+  {
+    "key": 1,
+    "title": "Job Seeking Platform - HirelyNow",
+    "imageSrc": "projects/HirelyNow.jpg",
+    "description":[
+      "Developed a full-stack job portal where users can register as job Seekers or verified Employers." ,
+      "Implemented authentication (JWT, bcrypt) with role-based access control.", 
+      "Employers can post, update, delete jobs; Job Seekers view and apply." ,
+      "Used MongoDB Atlas for cloud storage, deployed on Render.", 
+      "Handled secure cookie-based authentication with proper CORS and credentials setup."
+    ],
+    "demo": "https://job-seeking-application-hirelynow.onrender.com",
+    "source": "https://github.com/Harshiitt26/Job-Seeking-Application-HirelyNow-"
+  },
+  {
+    "key": 2,
+    "title": "Expense Tracker",
+    "imageSrc": "projects/ExpenseTracker.jpg",
+    "description":[
+      "Built a full-stack app to track income, expenses, and total balance in real-time." ,
+      "Users can add multiple incomes and expenses with categorized details.", 
+      "Displays financial overview with pie chart visualization using Chart.js." ,
+      "Integrated Excel export feature to download transactions as .xlsx file.", 
+      "Shows recent transactions and summary of income vs expenditure."
+    ],
+    "demo": "",
+    "source": "https://github.com/Harshiitt26/Expense-Tracker-Application"
+  }
+]

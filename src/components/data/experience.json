@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "role": "Full Stack Developer Intern (Onsite)",
+    "organisation": "Social Ghost",
+    "startDate": "May, 2024",
+    "endDate": "July , 2024",
+    "location": "Delhi -110044",
+    "experiences": [
+      "Developed a responsive web application using React.js and BootstrapCSS",
+      "implemented a REST-ful API using Node.js and Express,",
+      " ensuring seamless data flow between the Frontend and Backend",
+      "Integerated JWT-based authentication, securing user access for 500+",
+      "optimized database queries in MongoDB, reducing query response time by 20%"
+    ],
+    "imageSrc": "company/SocialGhostLogo.png",
+    "companyUrl":"https://socialghost.in/"
+  }
+]
