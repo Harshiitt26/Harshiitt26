@@ -4,7 +4,9 @@ const Navbar = () => {
   return (
     <>
       <div className="container-fluid navbar" data-aos="fade-down" data-aos-duration="1000">
-        <div className="left">Harshiitt26</div>
+        <div className="left">
+          <img src="/assets/favicon/harshiitt26.logo.png" alt="website logo" />
+        </div>
         <div className="right">
             <a href="#home" className="navbar_items">Home</a>
             <a href="#experience" className="navbar_items">Experience</a>

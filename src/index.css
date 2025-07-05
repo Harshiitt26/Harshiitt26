@@ -56,8 +56,20 @@ body{
   padding: 10px;
   border-bottom: 4px solid rgba(11, 132, 138, 0.595);
   background-color: rgba(11, 132, 138, 0.595);
-  padding-left: 180px;
+  padding-left: 140px;
   padding-right: 100px;
+}
+.navbar .left{
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .left img{
+  width: 250px;
+  height: 75px;
+  /* background-color: black; */
+  border-radius: 10px;
 }
 .navbar .right{
   display: flex;
@@ -86,7 +98,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 77vh;
   gap: 20px;
   
 }
