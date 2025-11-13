@@ -9,6 +9,14 @@ body{
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #0f2027 ,#203a43, #2c5364);
   color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 /* Marquee Section */
 .marquee-container {
@@ -297,4 +305,388 @@ body{
   height: 50px;
   width: 70px;
   
+}
+
+/* ============================================
+   RESPONSIVE DESIGN - MEDIA QUERIES
+   ============================================ */
+
+/* Tablet and iPad (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  /* Navbar */
+  .navbar {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+  }
+  
+  .navbar .left img {
+    width: 200px;
+    height: 60px;
+  }
+  
+  .navbar .right {
+    gap: 25px;
+  }
+  
+  /* Home Section */
+  .home {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+  
+  .home .left {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .home .right .img {
+    margin-top: 20px;
+  }
+  
+  /* Experience Section */
+  .experience-items {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .experience-items .left .img {
+    margin-left: 0;
+  }
+  
+  /* Skills Section */
+  .skills-items-item {
+    width: calc(33.333% - 40px);
+  }
+  
+  /* Projects Section */
+  .projects-items {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  
+  .projects-items .right {
+    width: 100%;
+  }
+  
+  .projects-items .left .img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  /* Contact Section */
+  .contact {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  
+  .contact-icons {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
+
+/* Mobile Devices (< 768px) */
+@media screen and (max-width: 768px) {
+  /* Marquee */
+  .marquee-text {
+    font-size: 12px;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100vw);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+  
+  .navbar .left img {
+    width: 150px;
+    height: 45px;
+  }
+  
+  .navbar .right {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    font-size: 16px;
+  }
+  
+  .navbar .right .navbar_items {
+    padding: 5px 10px;
+  }
+  
+  .navbar .right .navbar_items:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Home Section */
+  .home {
+    padding: 30px 15px;
+    min-height: auto;
+  }
+  
+  .home .left {
+    width: 100%;
+    padding: 15px;
+  }
+  
+  .home .left h1 {
+    font-size: 1.5rem;
+  }
+  
+  .home .left a {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .home .right .img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .home .right .img img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  
+  /* Experience Section */
+  .experience {
+    padding: 0 15px;
+  }
+  
+  .experience h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .experience-items {
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .experience-items .left .img {
+    width: 100%;
+    max-width: 150px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .experience-items .left .img img {
+    height: 60px;
+  }
+  
+  .experience-items .right {
+    text-align: center;
+  }
+  
+  .experience-items .right h2 {
+    font-size: 1.3rem;
+  }
+  
+  .experience-items .right h4 {
+    font-size: 1rem;
+  }
+  
+  .experience-items .right ul {
+    text-align: left;
+    padding-left: 20px;
+  }
+  
+  /* Skills Section */
+  .skills {
+    padding: 0 15px;
+  }
+  
+  .skills h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .skills-items {
+    gap: 10px;
+  }
+  
+  .skills-items-item {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .skills-items-item img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .skills-items-item h3 {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 0 15px;
+  }
+  
+  .projects h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .projects-items {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+  
+  .projects-items .left .img img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+  
+  .projects-items .right {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .projects-items .right h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+  
+  .projects-items .right ul {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .projects-items .right a {
+    width: 100%;
+    margin: 5px 0;
+    display: block;
+    font-size: 14px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 0 15px;
+    height: auto;
+    padding-bottom: 50px;
+  }
+  
+  .contact h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .contact-icons {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-icon {
+    height: 70px;
+    width: 70px;
+    margin-top: 20px;
+  }
+  
+  .contact-icon .icon {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+/* Small Mobile Devices (< 480px) */
+@media screen and (max-width: 480px) {
+  /* Navbar */
+  .navbar .right {
+    font-size: 14px;
+    gap: 10px;
+  }
+  
+  .navbar .right .navbar_items {
+    padding: 5px 8px;
+  }
+  
+  /* Home Section */
+  .home{
+    margin-top: 30px;
+  }
+  .home .left h1 {
+    font-size: 1.2rem;
+  }
+  
+  /* Skills Section */
+  .skills-items-item {
+    width: calc(50% - 10px);
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  .skills-items-item img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .skills-items-item h3 {
+    font-size: 0.8rem;
+  }
+  
+  /* Contact Section */
+  .contact-icon {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .contact-icon .icon {
+    height: 30px;
+    width: 30px;
+  }
+  
+  /* Container adjustments */
+  .container {
+    padding: 0 10px;
+  }
+  
+  /* Typography adjustments for small screens */
+  h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  h2 {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* Large Laptops and Desktops (> 1440px) */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .home .left {
+    max-width: 800px;
+  }
+  
+  .experience,
+  .skills,
+  .projects,
+  .contact {
+    max-width: 1100px;
+  }
 }

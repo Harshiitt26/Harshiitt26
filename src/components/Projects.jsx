@@ -14,7 +14,7 @@ const Projects = () => {
               <div key={data.id} className="projects-items my-5" data-aos="flip-left" data-aos-duration="1000">
                 <div className="left">
                   <div className="img">
-                    <img src={`assets/${data.imageSrc}`} className="card-img-top" alt="..."/>
+                    <img src={`/assets/${data.imageSrc}`} className="card-img-top" alt="..."/>
                   </div>
                   </div>
                   <div className="right">
